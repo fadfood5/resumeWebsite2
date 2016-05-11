@@ -1,4 +1,4 @@
-extends ../_bootstrap
+extends ../node_modules/jade-bootstrap/_bootstrap
 append styles
 	// Custom styles for this template 
 	link(href="../css/carousel.css", rel="stylesheet")
@@ -14,11 +14,11 @@ block body
 							span.icon-bar
 							span.icon-bar
 							
-						a(class="navbar-brand", href="#") Fadi Bitar
+						a(class="navbar-brand", href='/') Fadi Bitar
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
 							li.active
-								a(href="#") Home
+								a(href='/') Home
 							li
 								a(href="#about") About
 							li
@@ -50,15 +50,15 @@ block body
 	.container.marketing
 		// Three columns of text below the carousel
 		.row
-			a(href='../node_modules/jade-bootstrap/layouts/education', role='button')
+			a(href='education', role='button')
 				.col-lg-4
 					img.img-circle(src='../images/usf.jpg', alt='Generic placeholder image', width='140', height='140')
 					h2 Education
 					p
 						| Current Junior at the University of South Florida pursuing a dual degree in Computer Science and Philosophy.
 					p
-						a.btn.btn-default(href='../node_modules/jade-bootstrap/layouts/education', role='button') Click for more
-			a(href='#programming', role='button')
+						a.btn.btn-default(href='education', role='button') Click for more
+			a(href='programming', role='button')
 				.col-lg-4
 					img.img-circle(src='../images/programming.png', alt='Generic placeholder image', width='140', height='140')
 					h2 Programming
@@ -66,7 +66,7 @@ block body
 						| 
 					p
 						a.btn.btn-default(href='../node_modules/jade-bootstrap/layouts/programming', role='button') Click for more
-			a(href='#philosophy', role='button')
+			a(href='philosophy', role='button')
 				.col-lg-4
 					img.img-circle(src='../images/philosophy.jpg', alt='Generic placeholder image', width='140', height='140')
 					h2 Philosophy
