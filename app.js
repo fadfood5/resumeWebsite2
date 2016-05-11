@@ -7,6 +7,8 @@ var bodyParser = require('body-parser');
 var bootstrap = require("express-bootstrap-service");
 var router = express.Router();
 var education = require('./routes/education');
+var programming = require('./routes/programming');
+var philosophy = require('./routes/philosophy');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
@@ -35,6 +37,8 @@ app.use(bootstrap.serve);
 
 app.use('/', routes);
 app.use('/education', education);
+app.use('/programming', programming);
+app.use('/philosophy', philosophy);
 app.use('/users', users);
 
 // catch 404 and forward to error handler
