@@ -17,12 +17,14 @@ block body
 						a(class="navbar-brand", href='/') Fadi Bitar
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
-							li.active
+							li
 								a(href='/') Home
 							li
 								a(href='education') Education
-							li
+							li.active
 								a(href='programming') Programming
+							li
+								a(href='philosophy') Philosophy
 							li.dropdown
 								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
 									| Dropdown 
@@ -43,6 +45,20 @@ block body
 										
 		// START THE FEATURETTES
 		.container.marketing
+			hr.featurette-divider
+			.row.featurette
+				.col-md-7
+					h2.featurette-heading
+						| Hackathons 
+						span.text-muted
+					p.lead
+						| Active in local hackathon events. Hackathons Attended:
+					ul
+						li	2nd place at Fishackathon Tampa 2016
+						li	MangoHacks 2016
+						li	PolyHacks 2016
+				.col-md-5
+					img.featurette-image.img-responsive.center-block(src='../images/hackathon.png', alt='Generic placeholder image', width='220px', height='220px')
 			hr.featurette-divider
 			.row.featurette
 				.col-md-7
