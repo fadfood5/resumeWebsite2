@@ -1,6 +1,6 @@
 extends ../node_modules/jade-bootstrap/_bootstrap
 append styles
-	// Custom styles for this template 
+	// Custom styles for this template
 	link(href="../css/carousel.css", rel="stylesheet")
 block body
 	.navbar-wrapper
@@ -13,13 +13,13 @@ block body
 							span.icon-bar
 							span.icon-bar
 							span.icon-bar
-							
+
 						a(class="navbar-brand", href='/') Fadi Bitar
 					#navbar.navbar-collapse.collapse
 						ul.nav.navbar-nav
 							li
 								a(href='/') Home
-							li.active
+							li
 								a(href='education') Education
 							li
 								a(href='programming') Programming
@@ -27,33 +27,31 @@ block body
 								a(href='philosophy') Philosophy
 							li
 								a(href='http://www.github.com/fadfood5', target='_blank') Github
-							li
+							li.active
 								a(href='contact') Contact
-							
+
+		//BEGIN FEAUTURETTE
 		.container.marketing
 			hr.featurette-divider
 			.row.featurette
 				.col-md-7
 					h2.featurette-heading
-						| Completed Courses 
+						| Contact Information
 						span.text-muted
 					p.lead
-						| University of South Florida:
-					ul
-						li	Programming Concepts
-						li	Program Design
-						li	Discrete Structures
-						li	Computer Organization
+						ul
+							li	Phone: (813)765-6385
+							li	E-mail: fadibitar@mail.usf.edu
 				.col-md-5
-					img.featurette-image.img-responsive.center-block(src='../images/nodejs-logo.png', alt='Generic placeholder image', width='180px', height='180px')
+					//img.featurette-image.img-responsive.center-block(src='../images/existentialism.jpg', alt='existentialism', width='180px', height='180px')
 			hr.featurette-divider
-					
+
 		// FOOTER
 		footer
 			p.pull-right
 				a(href='#') Back to top
 			p
-				| © 2016 Built with node.js 
+				| © 2016 Built with node.js
 				a(href='#') Privacy
-				|  · 
+				|  ·
 				a(href='#') Terms

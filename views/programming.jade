@@ -25,23 +25,11 @@ block body
 								a(href='programming') Programming
 							li
 								a(href='philosophy') Philosophy
-							li.dropdown
-								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-									| Dropdown 
-									span.caret
-								ul.dropdown-menu(role='menu')
-									li
-										a(href='#') Action
-									li
-										a(href='#') Another action
-									li
-										a(href='#') Something else here
-									li.divider
-									li.dropdown-header Nav header
-									li
-										a(href='#') Separated link
-									li
-										a(href='#') One more separated link
+							li
+								a(href='http://www.github.com/fadfood5', target='_blank') Github
+							li
+								a(href='contact') Contact
+							
 										
 		// START THE FEATURETTES
 		.container.marketing
@@ -61,6 +49,17 @@ block body
 					img.featurette-image.img-responsive.center-block(src='../images/hackathon.png', alt='Generic placeholder image', width='220px', height='220px')
 			hr.featurette-divider
 			.row.featurette
+				.col-md-7.col-md-push-5
+					h2.featurette-heading
+						| C and Java
+						span.text-muted 
+					p.lead
+						| Able to produce functions and programs using C and Java.
+				.col-md-5.col-md-pull-7
+					img(src='../images/c-logo.png', alt='c-logo',  width='180px', height='180px')
+					img(src='../images/java.png', alt='java',  width='120px', height='120px')
+			hr.featurette-divider
+			.row.featurette
 				.col-md-7
 					h2.featurette-heading
 						| Node.js 
@@ -69,16 +68,6 @@ block body
 						| Able to build node.js apps from scratch using ExpressJS, Bootstrap, Jade, HTML, and CSS.
 				.col-md-5
 					img.featurette-image.img-responsive.center-block(src='../images/nodejs-logo.png', alt='Generic placeholder image', width='180px', height='180px')
-			hr.featurette-divider
-			.row.featurette
-				.col-md-7.col-md-push-5
-					h2.featurette-heading
-						| C and Java
-						span.text-muted 
-					p.lead
-						| Able to produce functions and programs using C and Java.
-				.col-md-5.col-md-pull-7
-					img.featurette-image.img-responsive.center-block(src='../images/c-logo.png', alt='Generic placeholder image',  width='180px', height='180px')
 			hr.featurette-divider
 		// /END THE FEATURETTES
 		// FOOTER

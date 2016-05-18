@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('philosophy', { title: 'Fadi Bitar - Philosophy' });
+  res.render('contact', { title: 'Fadi Bitar - Contact' });
 });
 
 module.exports = router;

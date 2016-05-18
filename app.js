@@ -6,6 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var bootstrap = require("express-bootstrap-service");
 var router = express.Router();
+
+var contact = require('./routes/contact');
 var education = require('./routes/education');
 var programming = require('./routes/programming');
 var philosophy = require('./routes/philosophy');
@@ -36,6 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bootstrap.serve);
 
 app.use('/', routes);
+app.use('/contact', contact);
 app.use('/education', education);
 app.use('/programming', programming);
 app.use('/philosophy', philosophy);
